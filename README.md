@@ -34,7 +34,20 @@ git clone https://github.com/varungujjar/mopidy-spotify-render/
 cd mopidy-spotify-render
 pip install -e .
 ```
+Add the following lines to core.playback.py within the PlaybackController class
+```sh
+    def set_metadata(self, track: TlTrack) -> None:
+        """
+        Set Track meta data seperately.
+        """
+        self._set_current_tl_track(track)
 
+    def set_position(self, position: DurationMs) -> None:
+        """
+        Set Track position seperately.
+        """
+        self._pending_position = position
+```
 
 ## Configuration
 
