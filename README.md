@@ -5,9 +5,9 @@
 Mopidy-Spotify-Render:
 Created compiling librespot for Raspberry Pi (Ported from Moode)
 
-Working support for the following features is currently available:
-Works directly with alsa
-When Spotify Rendered is connected the current playing track is stopped
+- Working support for the following features is currently available:
+- Works directly with alsa
+- When Spotify Renderer is connected the current playback is stopped
 
 
 ## Dependencies
@@ -33,8 +33,6 @@ pip install -e .
 ```
 
 
-
-
 ## Configuration
 
 Before starting Mopidy, you must visit https://mopidy.com/ext/spotify/#authentication
@@ -46,6 +44,6 @@ client_id = ... client_id value you got from mopidy.com ...
 client_secret = ... client_secret value you got from mopidy.com ...
 ```
 ## Project resources
-
+- [Configuration Options ](https://github.com/librespot-org/librespot/wiki/Options)
 - [Source code](https://github.com/mopidy/mopidy-spotify](https://github.com/varungujjar/mopidy-spotify-render/)
 
