@@ -7,7 +7,10 @@ Created compiling librespot for Raspberry Pi (Ported from Moode)
 
 - Working support for the following features is currently available:
 - Works directly with alsa
-- When Spotify Renderer is connected the current playback is stopped
+- When Spotify Renderer is connected the current playing from other source is stopped
+- Current Playing shows track information
+- Seek Position only updates on playing, pause & seek actions on spotify app.
+
 
 
 ## Dependencies
